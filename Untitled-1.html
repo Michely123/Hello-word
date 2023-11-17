@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function compara(x){
+            let valor= parseInt(x)
+            if(valor<6){
+                alert("O valor é menor que 6")
+            }else if(valor==6){
+                alert("Os valores são iguais")
+            }else{
+                alert("O valor é maior que 6")
+            }
+        }
+        function CompararIdade(n1,i1,n2,i2){
+            if(i1>i2){
+                alert(n1+" é a pessoa mais velha")
+            }else{
+                alert(n2+" é a pessoa mais velha")
+            }
+        }
+    </script>
+</head>
+<body>
+    <label for="numero">Digite um número: </label>
+    <input type="number" id="numero" name="numero">
+    <br>
+    <input type="button" id="btn1" value="verificar" onclick="compara(numero.value)">
+    <hr>
+    <label for="numero2">Digite um número: </label>
+    <input type="number" id="numero2" name="numero2">
+    <br>
+    <input type="button" id="btn2" value="verificar" onclick="compara(numero2.value)">
+    <hr>
+    <label for="nome1">Primeira pessoa: </label>
+    <input type="text" id="nome1" name="nome1">
+    <br>
+    <label for="idade1">idade: </label>
+    <input type="number" name="idade1" id="idade1">
+    <br>
+    <label for="nome2">Segunda pessoa: </label>
+    <input type="text" name="nome2" id="nome2">
+    <br>
+    <label for="idade2">Idade: </label>
+    <input type="number"  id="idade2" name="idade2">
+    <br>
+    <input type="button" id="btn3" value="verificar" onclick="CompararIdade(nome1.value,idade1.value,nome2.value,idade2.value)">
+    <hr>
+</body>
+</html>
